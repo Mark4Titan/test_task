@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="stylesheet" type="text/css" href="/style.css">   
+    <title>Document</title>
+</head>
+<body>
+    <section class="calculator">    
+        <div id="slider">
+            <div class="storage">
+                <div class="gb">
+                    <span>Storage:</span>
+                    <span id="sliderValueStorage">100</span>
+                    <span>GB</span>
+                </div>
+                <div>
+                    <input id="sliderStorage" 
+                        class="slider" 
+                        type="range" 
+                        min="0" 
+                        max="1000" 
+                        step="1" 
+                        value="100">                            
+                </div>
+            </div>                
+            <div class="transfer">
+                <div class="gb">
+                    <span>Transfer:</span>
+                    <span id="sliderValueTransfer">400</span>
+                    <span>GB</span>
+                </div>
+                <div>
+                    <input id="sliderTransfer" 
+                        class="slider" 
+                        type="range" 
+                        min="0" 
+                        max="1000" 
+                        step="1" 
+                        value="400">            
+                </div>
+            </div>
+        </div>
+
+      
+            <ul>
+                <li class="backblaze">
+                    <div class="title">
+                        <span class="firm">backblaze.com</span> 
+                    </div>
+                    <img class="img" src="./img/backblaze.png">
+                    <span id="backblazeSpan"></span>
+                    <div>
+                        <span id="backblazeVal">5</span>
+                        <span>$</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span class="firm">bunny.net</span>       
+                        <div id="bunny">
+                            <input type="radio" id="HDD" name="bunny" value="HDD" checked>
+                            <label for="HDD">HDD</label>   
+                            <input type="radio" id="SSD" name="bunny" value="SSD">
+                            <label for="SSD">SSD</label>  
+                        </div>
+                    </div>
+                    <img class="img" src="./img/bunny.png"> 
+                    <span id="bunnySpan"></span>
+                    <div>
+                        <span id="bunnyVal">5</span>
+                        <span>$</span>
+                    </div>
+                </li>  
+                <li>
+                    <div class="title">
+                        <span class="firm">scaleway.com</span>
+                        <div id="scaleway">
+                            <input type="radio" id="Multi" name="scaleway" value="Multi" checked>
+                            <label for="Multi">Multi</label>
+                            <input type="radio" id="Single" name="scaleway" value="Single">        
+                            <label for="Single">Single</label>
+                        </div>
+                    </div>
+                    <img class="img" src="./img/scaleway.png"> 
+                    <span id="scalewaySpan"></span>
+                    <div>
+                        <span id="scalewayVal">0</span>
+                        <span>$</span>
+                    </div>
+                </li>                
+                <li>   
+                    <div class="title">
+                        <span class="firm">vultr.com</span> 
+                    </div>                 
+                    <img class="img" src="./img/vultr.png">
+                    <span id="vultrSpan"></span>
+                    <div>
+                        <span id="vultrVal">5</span>
+                        <span>$</span>
+                    </div>
+                </li>                
+
+             </ul>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

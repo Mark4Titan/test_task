@@ -1,0 +1,149 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: auto;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.calculator {
+  display: grid;
+  grid-template: 1fr/1fr 800px 1fr;
+  border-radius: 15px;
+  padding: 15px;
+  grid-column: 2/3;
+}
+
+#slider {
+  grid-column: 2/3;
+  display: grid;
+  margin: 10px;
+  margin-bottom: -1px;
+  grid-template: 1fr/1fr 1fr;
+  justify-items: center;
+  font-size: 20px;
+  border: solid 1px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 25px;
+}
+.slider {
+  width: 220px;
+}
+
+.storage {
+  display: grid;
+  justify-items: center;
+}
+.transfer {
+  display: grid;
+  justify-items: center;
+}
+.img {
+  height: 40px;
+  width: 40px;
+}
+
+ul {
+  grid-column: 2/3;
+  display: grid;
+  grid-template: 1fr/1fr;
+}
+ul :last-child {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+ul :first-child {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+li {
+  display: grid;
+  grid-template: minmax(60px, 105px)/200px 60px auto 60px;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 25px;
+  justify-content: start;
+  border: solid 1px;
+  padding: 10px;
+}
+.firm {
+  position: relative;
+  display: grid;
+  font-size: 20px;
+  justify-content: center;
+}
+.accent {
+  background-color: aquamarine;
+}
+.gb {
+  position: relative;
+  width: 160px;
+}
+.gb ::after {
+  position: absolute;
+  content: "0";
+  top: 20px;
+  left: -45px;
+}
+.gb ::before {
+  position: absolute;
+  content: "1000";
+  top: 20px;
+  left: 195px;
+}
+
+@media (max-width: 840px) {
+    .title{
+      transform: rotate(90deg);
+      
+    }
+
+  ul {
+    transform: rotate(-90deg);
+    margin-bottom: -13px;
+    grid-template: 1fr/450px;
+  }
+
+  #slider {
+    grid-row: 2/3;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    grid-template: 1fr/1fr;
+  }
+  #scaleway, #bunny{
+    display: grid;
+    justify-items: center;
+  }
+
+  .calculator {
+  grid-template: 1fr/1fr 500px 1fr;
+}
+li {
+  grid-template: minmax(60px, 105px)/100px 60px auto 60px;
+  grid-gap: 5px;
+}
+.img{
+    transform: rotate(90deg);
+}
+}
